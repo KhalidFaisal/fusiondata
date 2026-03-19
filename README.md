@@ -234,23 +234,6 @@ parse_reaction_string("D(T,n)4He")
 # → {"target": "D", "projectile": "T", "ejectile": "n", "residual": "4He"}
 ```
 
-## 🤖 Automated Publishing
-
-This repository is configured with **PyPI Trusted Publishing** via GitHub Actions.
-
-When you are ready to publish a new release:
-1. Update the version inside `pyproject.toml` and `fusiondata/__init__.py`.
-2. Commit and tag the release:
-   ```bash
-   git add .
-   git commit -m "Bump version to v0.2.0"
-   git tag v0.2.0
-   git push origin main --tags
-   ```
-3. The GitHub Action `.github/workflows/publish.yml` will automatically build the wheel and upload it to PyPI securely using an OIDC token matching the tag.
-
-*Note: You must configure PyPI to trust your GitHub repository first. Go to PyPI → Account Settings → Publishing → Add a new publisher → GitHub. Set the Environment name to `pypi`.*
-
 ## 🤝 Contributing
 
 This is an open-source project. Contributions welcome:
