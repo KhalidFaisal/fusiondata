@@ -15,7 +15,7 @@ Quick start:
     >>> programs = w7x.list_programs("2023-03-15")
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "fusiondata contributors"
 
 from fusiondata.sources.w7x import W7X
